@@ -5,11 +5,11 @@ Error: File to import not found or unreadable: resets.
 
 1: @import 'variables';
 2: @import 'resets';
-3: 
-4: // mixin
-5: @mixin imgLayout($img) {
-6:     background-image: url('$img');
-7:     float: left;
+3: @import 'bourbon/bourbon';
+4: @import 'neat/neat';
+5: 
+6: @include outer-container(rem(1000));
+7: @include span-columns();
 
 Backtrace:
 ./main.scss:2
@@ -55,4 +55,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: resets.\A        Load path: /Users/shannonriester/Desktop/tiy/day-07/assignments/styles\A         on line 2 of ./main.scss\A \A 1: @import 'variables';\A 2: @import 'resets';\A 3: \A 4: // mixin\A 5: @mixin imgLayout($img) {\A 6:     background-image: url('$img');\A 7:     float: left;"; }
+  content: "Error: File to import not found or unreadable: resets.\A        Load path: /Users/shannonriester/Desktop/tiy/day-07/assignments/styles\A         on line 2 of ./main.scss\A \A 1: @import 'variables';\A 2: @import 'resets';\A 3: @import 'bourbon/bourbon';\A 4: @import 'neat/neat';\A 5: \A 6: @include outer-container(rem(1000));\A 7: @include span-columns();"; }
