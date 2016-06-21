@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'resets';
+
+// mixin
+@mixin imgLayout($img) {
+    background-image: url('$img');
+    float: left;
+    display: inline-block;
+    transition: background-img 2s, background-img 2s;
+
+    &:hover {
+      background-img: ('url');
+    }
+}
