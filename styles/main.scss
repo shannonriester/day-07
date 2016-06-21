@@ -1,21 +1,51 @@
-@import 'variables';
 @import 'resets';
 @import 'bourbon/bourbon';
 @import 'neat/neat';
+@import 'variables';
+// @include outer-container(rem(1000));
+// @include span-columns();
+// @include omega();
 
-@include outer-container(rem(1000));
-@include span-columns();
-@include omega();
-
-// mixin
+// mixins
 @mixin imgLayout($img) {
     background-image: url('$img');
     float: left;
     display: inline-block;
     transition: background-img 2s, background-img 2s;
-
     &:hover {
-      background-img: ('url');
+        background-img: ('url');
     }
 }
 //
+main {
+    background-color: $main-background-color;
+    color: $text-color;
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    .mountainImg {
+      display: none;
+    }
+
+    .merchImg {
+      display: none;
+    }
+  }
+
+    .bikeImg {
+        list-style-type: none;
+
+        li:first-child {
+            height: rem(480);
+            background-image: url('https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include span-columns(12);
+        }
+    }
