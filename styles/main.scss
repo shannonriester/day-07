@@ -1,5 +1,11 @@
 @import 'variables';
 @import 'resets';
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+@include outer-container(rem(1000));
+@include span-columns();
+@include omega();
 
 // mixin
 @mixin imgLayout($img) {
@@ -12,3 +18,4 @@
       background-img: ('url');
     }
 }
+//
