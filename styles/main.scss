@@ -8,26 +8,34 @@
 
 // mixins
 @mixin imgLayout($img) {
-    background-image: url('$img');
+    height: rem(480);
+    background-image: url($img);
     float: left;
     display: inline-block;
-    transition: background-img 2s, background-img 2s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity, 2s ease-out;
+
     &:hover {
-        background-img: ('url');
+        opacity: .9;
     }
+
+    //key frames
 }
 //
 main {
     background-color: $main-background-color;
-    color: $text-color;
+    color: $primary-color;
 
     ul {
       list-style-type: none;
+      margin: 0;
+      padding: 0;
     }
 
     li {
-      display: inline-block;
-    }
+      @include fill-parent;
+      }
 
     .mountainImg {
       display: none;
@@ -38,14 +46,11 @@ main {
     }
   }
 
+
     .bikeImg {
         list-style-type: none;
 
         li:first-child {
-            height: rem(480);
-            background-image: url('https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            @include span-columns(12);
-        }
-    }
+            @include imgLayout('https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg');
+          }
+      }

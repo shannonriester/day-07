@@ -10,11 +10,13 @@ html {
 
 main {
   background-color: #EDEFED;
-  color: #C9CDCC; }
+  color: #007A87; }
   main ul {
-    list-style-type: none; }
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
   main li {
-    display: inline-block; }
+    width: 100%; }
   main .mountainImg {
     display: none; }
   main .merchImg {
@@ -25,13 +27,12 @@ main {
   .bikeImg li:first-child {
     height: 30rem;
     background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg");
+    float: left;
+    display: inline-block;
     background-size: cover;
     background-repeat: no-repeat;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%; }
-    .bikeImg li:first-child:last-child {
-      margin-right: 0; }
+    transition: opacity, 2s ease-out; }
+    .bikeImg li:first-child:hover {
+      opacity: .9; }
 
 /*# sourceMappingURL=main.css.map */
