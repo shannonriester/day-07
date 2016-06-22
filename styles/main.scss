@@ -2,8 +2,11 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 @import 'variables';
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
 @mixin imgLayout($img) {
     height: rem(480);
     background-image: url($img);
@@ -76,6 +79,7 @@ main {
 }
 /*- - - - - media query for middle size - - - - -*/
 @media screen and (min-width: 765px) {
+<<<<<<< HEAD
 
     main {
 
@@ -124,16 +128,53 @@ main {
       }
 
       .mountainImg {
+=======
+    main {
+        @include span-columns(12);
+        @include omega();
+    }
+    .bikeImg {
+        @include span-columns(6 of 12);
+        @include omega();
+    }
+    .merchImg {
+        @include span-columns(6 of 12);
+    }
+}
+/*- - - - - - - - - biggest media query? - - - - - - - - - */
+@media screen and (min-width: 965px) {
+    .topRow {
+        @include span-columns(12);
+    }
+    .bikeImg {
+        @include span-columns(7 of 12);
+    }
+    .merchImg {
+        @include span-columns(5 of 12);
+    }
+    .bottomRow {
+        @include span-columns(12);
+        padding-top: 2.35765%;
+    }
+    .mountainImg {
+        @include span-columns(5 of 12);
+    }
+    .mountainImg {
+>>>>>>> master
         @include span-columns(5 of 12);
         margin-bottom: -30rem;
         float: left;
         li:first-child {
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
             @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike2.jpeg');
             &:hover {
                 opacity: 1;
             }
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         li:nth-child(2) {
@@ -155,17 +196,41 @@ main {
 
         li:first-child {
           @include omega();
+=======
+        li:nth-child(2) {
+            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike3.jpeg');
+            bottom: 30rem;
+        }
+    }
+    .townImg {
+        @include span-columns(7 of 12);
+        @include omega();
+        margin-bottom: -30rem;
+    }
+    .townImg {
+        float: right;
+        li:first-child {
+            @include omega();
+>>>>>>> master
             @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Austin1.jpeg');
             &:hover {
                 opacity: 1;
             }
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
         li:nth-child(2) {
             @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Austin2.jpeg');
             bottom: 30rem;
             @include omega();
+<<<<<<< HEAD
 
             }
 
         }
+=======
+        }
+    }
+>>>>>>> master
