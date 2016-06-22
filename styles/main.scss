@@ -75,65 +75,157 @@ main {
 main {
     @include clearfix();
 }
-/*- - - - - media query for larger size - - - - -*/
+/*- - - - - media query for middle size - - - - -*/
+@media screen and (min-width: 765px) {
+    // .bikeImg {
+    //     float: left;
+    //     @include clearfix();
+    // }
+    // .merchImg {
+    //     float: left;
+    //     @include clearfix();
+    // }
+    // .mountainImg {
+    //     display: block;
+    //     // float: left;
+    //     // @include clearfix();
+    // }
+    //
+    // .townImg {
+    //   display: none;
+    // }
+    // .bikeImg {
+    //     width: 33vw;
+    //     margin-bottom: -30rem;
+    //     li:first-child {
+    //         @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike2.jpeg');
+    //         &:hover {
+    //             opacity: 1;
+    //         }
+    //     }
+    //     li:nth-child(2) {
+    //         @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg');
+    //         bottom: 30rem;
+    //     }
+    // }
+    // .merchImg {
+    //     width: 34vw;
+    //     margin-bottom: -30rem;
+    //     li:first-child {
+    //         @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise1.jpeg');
+    //         &:hover {
+    //             opacity: 1;
+    //         }
+    //     }
+    //     li:nth-child(2) {
+    //         @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise3.jpeg');
+    //         bottom: 30rem;
+    //     }
+    // }
+    // .mountainImg {
+    //     width: 33vw;
+    //     margin-bottom: -30rem;
+    //     li:first-child {
+    //         @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike2.jpeg');
+    //         &:hover {
+    //             opacity: 1;
+    //         }
+    //     }
+    //     li:nth-child(2) {
+    //         @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike3.jpeg');
+    //         bottom: 30rem;
+    //         @include omega();
+    //     }
+    // }
+
+    main {
+
+        @include span-columns(12);
+        @include omega();
+    }
+
+
+
+    .bikeImg {
+      @include span-columns(6 of 12);
+      @include omega();
+    }
+
+    .merchImg{
+      @include span-columns(6 of 12);
+    }
+
+
+
+}
+/*- - - - - - - - - biggest media query? - - - - - - - - - */
 @media screen and (min-width: 965px) {
-    .bikeImg {
-        float: left;
-        @include clearfix();
-    }
-    .merchImg {
-        float: left;
-        @include clearfix();
-    }
-    .mountainImg {
-        display: block;
-        float: left;
-        @include clearfix();
-    }
-    .bikeImg {
-        width: 33vw;
+
+
+
+      .topRow {
+        @include span-columns(12);
+      }
+
+      .bikeImg {
+        @include span-columns(7 of 12);
+      }
+
+      .merchImg {
+        @include span-columns(5 of 12);
+      }
+
+      .bottomRow {
+        @include span-columns(12);
+        padding-top: 2.35765%;
+      }
+
+      .mountainImg {
+        @include span-columns(5 of 12);
+      }
+
+      .mountainImg {
+        @include span-columns(4 of 12);
         margin-bottom: -30rem;
         li:first-child {
-            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike2.jpeg');
-            &:hover {
-                opacity: 1;
-            }
-        }
-        li:nth-child(2) {
-            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg');
-            bottom: 30rem;
-        }
-    }
-    .merchImg {
-        width: 34vw;
-        margin-bottom: -30rem;
-        li:first-child {
-            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise1.jpeg');
-            &:hover {
-                opacity: 1;
-            }
-        }
-        li:nth-child(2) {
-            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise3.jpeg');
-            bottom: 30rem;
-        }
-    }
-    .mountainImg {
-        width: 33vw;
-        margin-bottom: -30rem;
-        li:first-child {
+
             @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike2.jpeg');
             &:hover {
                 opacity: 1;
             }
         }
+
         li:nth-child(2) {
             @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike3.jpeg');
             bottom: 30rem;
-            @include omega();
+
+            }
+
         }
-    }
-}
-/*- - - - - - - - - biggest media query? - - - - - - - - - */
-@media screen and (min-width: 965px) {
+
+      .townImg {
+        @include span-columns(7 of 12);
+        @include omega();
+        margin-bottom: -30rem;
+      }
+
+      .townImg {
+
+        li:first-child {
+          @include omega();
+            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Austin1.jpeg');
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        li:nth-child(2) {
+            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Austin2.jpeg');
+            bottom: 30rem;
+            @include omega();
+
+            }
+
+        }
+
 }
