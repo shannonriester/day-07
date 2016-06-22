@@ -2,139 +2,170 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 @import 'variables';
-// @include outer-container(rem(1000));
-// @include span-columns();
-// @include omega();
 
-// mixins
+
 @mixin imgLayout($img) {
-    background-image: url('$img');
-    float: left;
-    display: inline-block;
-    transition: background-img 2s, background-img 2s;
+    height: rem(480);
+    background-image: url($img);
+    // background-size: contain;
+    // display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity, 1s ease-in-out;
+    position: relative;
     &:hover {
-        background-img: ('url');
+        opacity: 0;
     }
 }
-//
+/*- - - - - - -mobile view - - - - - - */
 main {
     background-color: $main-background-color;
-    color: $text-color;
-
+    color: $primary-color;
     ul {
-      list-style-type: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        list-style-type: none;
+        text-align: center;
+        font-size: 3em;
+        color: $header-color;
     }
-
     li {
-      display: inline-block;
+        @include fill-parent;
+    }
+}
+.mountainImg {
+    display: none;
+}
+.townImg {
+    display: none;
+}
+.bikeImg {
+    float: left;
+    width: 50vw;
+    margin-bottom: -30rem;
+    li:first-child {
+        @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg');
+        &:hover {
+            opacity: 1;
+        }
+    }
+    li:nth-child(2) {
+        @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike1.jpeg');
+        bottom: 30rem;
+    }
+}
+.merchImg {
+    float: right;
+    width: 50vw;
+    margin-bottom: -30rem;
+    li:first-child {
+        @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise1.jpeg');
+        &:hover {
+            opacity: 1;
+        }
+    }
+    li:nth-child(2) {
+        @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise3.jpeg');
+        bottom: 30rem;
+    }
+}
+main {
+    @include clearfix();
+}
+/*- - - - - media query for middle size - - - - -*/
+@media screen and (min-width: 765px) {
+
+    main {
+
+        @include span-columns(12);
+        @include omega();
     }
 
-    .mountainImg {
-      display: none;
-    }
 
-    .merchImg {
-      display: none;
-    }
-  }
 
     .bikeImg {
-        list-style-type: none;
+      @include span-columns(6 of 12);
+      @include omega();
+    }
+
+    .merchImg{
+      @include span-columns(6 of 12);
+    }
+
+
+
+}
+/*- - - - - - - - - biggest media query? - - - - - - - - - */
+@media screen and (min-width: 965px) {
+
+
+
+      .topRow {
+        @include span-columns(12);
+      }
+
+      .bikeImg {
+        @include span-columns(7 of 12);
+      }
+
+      .merchImg {
+        @include span-columns(5 of 12);
+      }
+
+      .bottomRow {
+        @include span-columns(12);
+        padding-top: 2.35765%;
+      }
+
+      .mountainImg {
+        @include span-columns(5 of 12);
+      }
+
+      .mountainImg {
+        @include span-columns(5 of 12);
+        margin-bottom: -30rem;
+        float: left;
+        li:first-child {
+
+            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike2.jpeg');
+            &:hover {
+                opacity: 1;
+            }
+        }
+<<<<<<< HEAD
+
+        li:nth-child(2) {
+            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike3.jpeg');
+            bottom: 30rem;
+
+            }
+
+        }
+
+      .townImg {
+        @include span-columns(7 of 12);
+        @include omega();
+        margin-bottom: -30rem;
+      }
+
+      .townImg {
+        float: right;
 
         li:first-child {
-            height: rem(480);
-            background-image: url('https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            @include span-columns(12);
+          @include omega();
+            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Austin1.jpeg');
+            &:hover {
+                opacity: 1;
+            }
         }
-    }
-footer {
-  width: 100vw;
-  background-color: $main-background-color;
-    ul{
-      list-style-type: none;
-      color: $primary-color;
-      text-align: center;
-      padding-bottom: 1rem;
-      margin: 0rem;
-      }
-    }
-  .navFooterSocialMedia {
-    display: block;
-    float: left;
-    color: $primary-color;
-    font-size: 5rem;
-  }
-  .contactInfo {
-    ul {
-      padding: 0rem;
-      li{
-        padding-bottom: 2rem;
-        img {
-          width: 5rem;
-        }
-    }
-  }
-}
-  .g-maps{
-    float: right;
-    img{
-      width: 72vw;
-      margin-right: 1rem;
-    }
-  }
 
-  .subFooter {
-    display: inline-block;
-    color: $primary-color;
-    width: 100%;
-    text-align: center;
-  }
-@media screen and (min-width: 840px){
-footer {
-  width: 100vw;
-  background-color: $main-background-color;
-    ul{
-      list-style-type: none;
-      color: $primary-color;
-      text-align: center;
-      padding-bottom: 1rem;
-      margin: 0rem;
-      }
-    }
-  .navFooterSocialMedia {
-    display: block;
-    float: left;
-    color: $primary-color;
-    font-size: 5rem;
-    li{
-      padding-bottom: 5rem;
-    }
-  }
-  .contactInfo {
-    ul {
-      padding: 0rem;
-      li{
-        padding-bottom: .5rem;
-        img {
-          width: 5rem;
-        }
-    }
-  }
-}
-  .g-maps{
-    float: right;
-    img{
-      width: 72vw;
-      margin-right: 7vw;
-    }
-  }
+        li:nth-child(2) {
+            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Austin2.jpeg');
+            bottom: 30rem;
+            @include omega();
 
-  .subFooter {
-    display: inline-block;
-    color: $primary-color;
-    width: 100%;
-    text-align: center;
-  }
-}
+            }
+
+        }
