@@ -34,4 +34,77 @@ main {
     .bikeImg li:first-child:last-child {
       margin-right: 0; }
 
+footer {
+  width: 100vw;
+  background-color: #EDEFED; }
+  footer ul {
+    list-style-type: none;
+    color: #007A87;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin: 0rem; }
+
+.navFooterSocialMedia {
+  display: block;
+  float: left;
+  color: #007A87;
+  font-size: 5rem; }
+
+.contactInfo ul {
+  padding: 0rem; }
+  .contactInfo ul li {
+    padding-bottom: 2rem; }
+    .contactInfo ul li img {
+      width: 5rem; }
+
+.g-maps {
+  float: right; }
+  .g-maps img {
+    width: 72vw;
+    margin-right: 1rem; }
+
+.subFooter {
+  display: inline-block;
+  color: #007A87;
+  width: 100%;
+  text-align: center; }
+
+@media screen and (min-width: 840px) {
+  footer {
+    width: 100vw;
+    background-color: #EDEFED; }
+    footer ul {
+      list-style-type: none;
+      color: #007A87;
+      text-align: center;
+      padding-bottom: 1rem;
+      margin: 0rem; }
+
+  .navFooterSocialMedia {
+    display: block;
+    float: left;
+    color: #007A87;
+    font-size: 5rem; }
+    .navFooterSocialMedia li {
+      padding-bottom: 5rem; }
+
+  .contactInfo ul {
+    padding: 0rem; }
+    .contactInfo ul li {
+      padding-bottom: .5rem; }
+      .contactInfo ul li img {
+        width: 5rem; }
+
+  .g-maps {
+    float: right; }
+    .g-maps img {
+      width: 72vw;
+      margin-right: 7vw; }
+
+  .subFooter {
+    display: inline-block;
+    color: #007A87;
+    width: 100%;
+    text-align: center; } }
+
 /*# sourceMappingURL=main.css.map */
