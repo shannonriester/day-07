@@ -77,66 +77,6 @@ main {
 }
 /*- - - - - media query for middle size - - - - -*/
 @media screen and (min-width: 765px) {
-    // .bikeImg {
-    //     float: left;
-    //     @include clearfix();
-    // }
-    // .merchImg {
-    //     float: left;
-    //     @include clearfix();
-    // }
-    // .mountainImg {
-    //     display: block;
-    //     // float: left;
-    //     // @include clearfix();
-    // }
-    //
-    // .townImg {
-    //   display: none;
-    // }
-    // .bikeImg {
-    //     width: 33vw;
-    //     margin-bottom: -30rem;
-    //     li:first-child {
-    //         @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike2.jpeg');
-    //         &:hover {
-    //             opacity: 1;
-    //         }
-    //     }
-    //     li:nth-child(2) {
-    //         @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg');
-    //         bottom: 30rem;
-    //     }
-    // }
-    // .merchImg {
-    //     width: 34vw;
-    //     margin-bottom: -30rem;
-    //     li:first-child {
-    //         @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise1.jpeg');
-    //         &:hover {
-    //             opacity: 1;
-    //         }
-    //     }
-    //     li:nth-child(2) {
-    //         @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise3.jpeg');
-    //         bottom: 30rem;
-    //     }
-    // }
-    // .mountainImg {
-    //     width: 33vw;
-    //     margin-bottom: -30rem;
-    //     li:first-child {
-    //         @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike2.jpeg');
-    //         &:hover {
-    //             opacity: 1;
-    //         }
-    //     }
-    //     li:nth-child(2) {
-    //         @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike3.jpeg');
-    //         bottom: 30rem;
-    //         @include omega();
-    //     }
-    // }
 
     main {
 
@@ -185,8 +125,9 @@ main {
       }
 
       .mountainImg {
-        @include span-columns(4 of 12);
+        @include span-columns(5 of 12);
         margin-bottom: -30rem;
+        float: left;
         li:first-child {
 
             @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike2.jpeg');
@@ -210,6 +151,7 @@ main {
       }
 
       .townImg {
+        float: right;
 
         li:first-child {
           @include omega();
