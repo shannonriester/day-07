@@ -1,49 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-/*
-Error: Invalid CSS after "        }": expected "}", was ""
-        on line 172 of ./main.scss
-
-167:             @include omega();
-168: 
-169:             }
-170: 
-171:         }
-
-Backtrace:
-./main.scss:172
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:658:in `block'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:409:in `media_directive'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:222:in `special_directive'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:197:in `directive'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Users/shannonriester/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"        }\": expected \"}\", was \"\"\A         on line 172 of ./main.scss\A \A 167:             @include omega();\A 168: \A 169:             }\A 170: \A 171:         }"; }
-=======
 body, header, footer {
   margin: 0;
   padding: 0; }
@@ -52,97 +6,219 @@ html {
   box-sizing: border-box; }
 
 *, *::after, *::before {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
-.headBackgroundImg{
-  background-color:
-}
-.logo-img{
-  text-align: center;
-  margin: 0px auto;
-  margin-left: 90px;
-}
-
- h1{
-   text-align: center;
-   margin: 0px auto;
-   padding: 0px;
-   font-size: 70px;
- }
-
- .subHeader{
-   margin: 0 auto;
-   text-align: center;
-   font-style: italic;
-   font-size: 30px;
-   border-bottom: 1px solid gray;
- }
-
-.navSocialMedia{
-  list-style: none;
-  text-decoration: none;
-  float: right;
-  margin-right: 20px;
-}
-
-.navSocialMedia li{
-  display: inline-block;
-  list-style: none;
-}
-
-.navSocialMedia ul{
-  margin: 0 auto;
-}
-
-.subHeader{
-  text-align: center
-}
-
-.navMain li{
-  display: inline-block;
-  float: left;
-  list-style: none;
-  margin-left: 30px;
-}
-
-.navMain {
-  margin-left: 0px;
-}
-
-a{
-    text-decoration: none;
-}
-/* main {
+/*- - - - - - -mobile view - - - - - - */
+main {
   background-color: #EDEFED;
-  color: #C9CDCC; }
+  color: #007A87; }
   main ul {
-    list-style-type: none; }
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    text-align: center;
+    font-size: 3em;
+    color: #FECF67; }
   main li {
-    display: inline-block; }
-  main .mountainImg {
-    display: none; }
-  main .merchImg {
-    display: none; }
+    width: 100%; }
+
+.mountainImg {
+  display: none; }
+
+.townImg {
+  display: none; }
 
 .bikeImg {
-  list-style-type: none; }
+  float: left;
+  width: 50vw;
+  margin-bottom: -30rem; }
   .bikeImg li:first-child {
     height: 30rem;
     background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    transition: opacity, 1s ease-in-out;
+    position: relative; }
+    .bikeImg li:first-child:hover {
+      opacity: 0; }
+    .bikeImg li:first-child:hover {
+      opacity: 1; }
+  .bikeImg li:nth-child(2) {
+    height: 30rem;
+    background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity, 1s ease-in-out;
+    position: relative;
+    bottom: 30rem; }
+    .bikeImg li:nth-child(2):hover {
+      opacity: 0; }
+
+.merchImg {
+  float: right;
+  width: 50vw;
+  margin-bottom: -30rem; }
+  .merchImg li:first-child {
+    height: 30rem;
+    background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity, 1s ease-in-out;
+    position: relative; }
+    .merchImg li:first-child:hover {
+      opacity: 0; }
+    .merchImg li:first-child:hover {
+      opacity: 1; }
+  .merchImg li:nth-child(2) {
+    height: 30rem;
+    background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise3.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity, 1s ease-in-out;
+    position: relative;
+    bottom: 30rem; }
+    .merchImg li:nth-child(2):hover {
+      opacity: 0; }
+
+main::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+/*- - - - - media query for middle size - - - - -*/
+/*- - - - - - - - - biggest media query? - - - - - - - - - */
+@media screen and (min-width: 965px) {
+  .topRow {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-    .bikeImg li:first-child:last-child {
+    .topRow:last-child {
       margin-right: 0; }
 
-/*# sourceMappingURL=main.css.map */
->>>>>>> 3ca281b0b5adef304438312a34a747830621276e
-=======
+  .bikeImg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    .bikeImg:last-child {
+      margin-right: 0; }
 
+  .merchImg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    .merchImg:last-child {
+      margin-right: 0; }
+
+  .bottomRow {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding-top: 2.35765%; }
+    .bottomRow:last-child {
+      margin-right: 0; }
+
+  .mountainImg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    .mountainImg:last-child {
+      margin-right: 0; }
+
+  .mountainImg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-bottom: -30rem;
+    float: left; }
+    .mountainImg:last-child {
+      margin-right: 0; }
+    .mountainImg li:first-child {
+      height: 30rem;
+      background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike2.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: opacity, 1s ease-in-out;
+      position: relative; }
+      .mountainImg li:first-child:hover {
+        opacity: 0; }
+      .mountainImg li:first-child:hover {
+        opacity: 1; }
+    .mountainImg li:nth-child(2) {
+      height: 30rem;
+      background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike3.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: opacity, 1s ease-in-out;
+      position: relative;
+      bottom: 30rem; }
+      .mountainImg li:nth-child(2):hover {
+        opacity: 0; }
+
+  .townImg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+    margin-right: 0;
+    margin-bottom: -30rem; }
+    .townImg:last-child {
+      margin-right: 0; }
+
+  .townImg {
+    float: right; }
+    .townImg li:first-child {
+      margin-right: 0; }
+      .townImg li:first-child li:nth-child(2) {
+        height: 30rem;
+        background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike3.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: opacity, 1s ease-in-out;
+        position: relative;
+        bottom: 30rem; }
+        .townImg li:first-child li:nth-child(2):hover {
+          opacity: 0; }
+    .townImg .townImg {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%;
+      margin-right: 0;
+      margin-bottom: -30rem; }
+      .townImg .townImg:last-child {
+        margin-right: 0; }
+    .townImg .townImg {
+      float: right; }
+      .townImg .townImg li:first-child {
+        margin-right: 0;
+        height: 30rem;
+        background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/Austin1.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: opacity, 1s ease-in-out;
+        position: relative; }
+        .townImg .townImg li:first-child:hover {
+          opacity: 0; }
+        .townImg .townImg li:first-child:hover {
+          opacity: 1; }
+      .townImg .townImg li:nth-child(2) {
+        height: 30rem;
+        background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/Austin2.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: opacity, 1s ease-in-out;
+        position: relative;
+        bottom: 30rem;
+        margin-right: 0; }
+        .townImg .townImg li:nth-child(2):hover {
+          opacity: 0; } }
 
 /*# sourceMappingURL=main.css.map */
->>>>>>> master
