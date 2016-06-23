@@ -1,3 +1,102 @@
 
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"        }\": expected \"}\", was \"\"\A         on line 172 of ./main.scss\A \A 167:             @include omega();\A 168: \A 169:             }\A 170: \A 171:         }"; }
+=======
+body, header, footer {
+  margin: 0;
+  padding: 0; }
 
-/*# sourceMappingURL=main.css.map */
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.headBackgroundImg{
+  background-color:
+}
+.logo-img{
+  text-align: center;
+  margin: 0px auto;
+  margin-left: 90px;
+}
+
+ h1{
+   text-align: center;
+   margin: 0px auto;
+   padding: 0px;
+   font-size: 70px;
+ }
+
+ .subHeader{
+   margin: 0 auto;
+   text-align: center;
+   font-style: italic;
+   font-size: 30px;
+   border-bottom: 1px solid gray;
+ }
+
+.navSocialMedia{
+  list-style: none;
+  text-decoration: none;
+  float: right;
+  margin-right: 20px;
+}
+
+.navSocialMedia li{
+  display: inline-block;
+  list-style: none;
+}
+
+.navSocialMedia ul{
+  margin: 0 auto;
+}
+
+.subHeader{
+  text-align: center
+}
+
+.navMain li{
+  display: inline-block;
+  float: left;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.navMain {
+  margin-left: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+/* main {
+  background-color: #EDEFED;
+  color: #C9CDCC; }
+  main ul {
+    list-style-type: none; }
+  main li {
+    display: inline-block; }
+  main .mountainImg {
+    display: none; }
+  main .merchImg {
+    display: none; }
+
+.bikeImg {
+  list-style-type: none; }
+  .bikeImg li:first-child {
+    height: 30rem;
+    background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .bikeImg li:first-child:last-child {
+      margin-right: 0; }
+
+*/
