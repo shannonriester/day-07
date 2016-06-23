@@ -1,74 +1,141 @@
-$primary-color: #007A87;
-$main-background-color: #EDEFED;
-$text-color: #C9CDCC;
-$caption-background: rgba(197,27,40, .5);
-$header-color: #FECF67;
 
-body, header, footer {
-  margin: 0;
-  padding: 0; }
+@import 'resets';
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'variables';
+// @include outer-container(rem(1000));
+// @include span-columns();
+// @include omega();
 
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit;
+// mixins
+@mixin imgLayout($img) {
+    background-image: url('$img');
+    float: left;
+    display: inline-block;
+    transition: background-img 2s, background-img 2s;
+    &:hover {
+        background-img: ('url');
+    }
 }
+//
+main {
+    background-color: $main-background-color;
+    color: $text-color;
 
-.logo-img{
-  text-align: center;
-  margin: 0px auto;
-  margin-left: 90px;
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    .mountainImg {
+      display: none;
+    }
+
+    .merchImg {
+      display: none;
+    }
+  }
+
+    .bikeImg {
+        list-style-type: none;
+
+        li:first-child {
+            height: rem(480);
+            background-image: url('https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include span-columns(12);
+        }
+    }
+footer {
+  width: 100vw;
+  background-color: $main-background-color;
+    ul{
+      list-style-type: none;
+      color: $primary-color;
+      text-align: center;
+      padding-bottom: 1rem;
+      margin: 0rem;
+      }
+    }
+  .navFooterSocialMedia {
+    display: block;
+    float: left;
+    color: $primary-color;
+    font-size: 5rem;
+  }
+  .contactInfo {
+    ul {
+      padding: 0rem;
+      li{
+        padding-bottom: 2rem;
+        img {
+          width: 5rem;
+        }
+    }
+  }
 }
+  .g-maps{
+    float: right;
+    img{
+      width: 72vw;
+      margin-right: 1rem;
+    }
+  }
 
- h1{
-   text-align: center;
-   margin: 0px auto;
-   padding: 0px;
-   font-size: 70px;
-   color: $text-color;
- }
-
- .subHeader{
-   margin: 0 auto;
-   text-align: center;
-   font-style: italic;
-   font-size: 30px;
-   border-bottom: 1px solid gray;
- }
-
-.navSocialMedia{
-  list-style: none;
-  text-decoration: none;
-  float: right;
-  margin-right: 20px;
+  .subFooter {
+    display: inline-block;
+    color: $primary-color;
+    width: 100%;
+    text-align: center;
+  }
+@media screen and (min-width: 840px){
+footer {
+  width: 100vw;
+  background-color: $main-background-color;
+    ul{
+      list-style-type: none;
+      color: $primary-color;
+      text-align: center;
+      padding-bottom: 1rem;
+      margin: 0rem;
+      }
+    }
+  .navFooterSocialMedia {
+    display: block;
+    float: left;
+    color: $primary-color;
+    font-size: 5rem;
+    li{
+      padding-bottom: 5rem;
+    }
+  }
+  .contactInfo {
+    ul {
+      padding: 0rem;
+      li{
+        padding-bottom: .5rem;
+        img {
+          width: 5rem;
+        }
+    }
+  }
 }
+  .g-maps{
+    float: right;
+    img{
+      width: 72vw;
+      margin-right: 7vw;
+    }
+  }
 
-.navSocialMedia li{
-  display: inline-block;
-  list-style: none;
-  color: $text-color;
+  .subFooter {
+    display: inline-block;
+    color: $primary-color;
+    width: 100%;
+    text-align: center;
+  }
 }
-
-.navSocialMedia ul{
-  margin: 0 auto;
-}
-
-.subHeader{
-  text-align: center
-  color:$text-color: #C9CDCC;
-}
-
-.navMain li{
-  display: inline-block;
-  float: left;
-  list-style: none;
-  margin-left: 30px;
-}
-
-.navMain {
-  margin-left: 0px;
-}
-
-a{
-    text-decoration: none;
